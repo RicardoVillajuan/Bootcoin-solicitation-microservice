@@ -1,0 +1,18 @@
+
+spring: 
+  application:
+    name: bootcoin-solicitation-service
+
+  cloud: 
+    config: 
+      uri: http://localhost:8090
+      username: nttdata
+      password: nttd4t4
+
+  kafka:
+    producer: 
+      bootstrap-servers: localhost:9092 
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+spring.data.mongodb.uri: mongodb+srv://admin:123@cluster0.xjk1b.mongodb.net/bootcamp2
